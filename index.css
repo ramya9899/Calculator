@@ -1,0 +1,105 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 23, 23);
+}
+.calculator
+{
+    width: 310px;
+    padding:30px 15px 10px;
+    background-color: rgb(240, 235, 235);
+    border-radius: 10px;
+    animation: cal;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+   border: 5px solid cyan;
+   transition: 1s;
+}
+@keyframes cal {
+    0%
+    {
+        border-bottom-color: #ff00ff;
+    }
+    25%
+    {
+        border-top-color: #ff00ff;
+    }
+    50%
+    {
+        border-right-color: #ff00ff;
+    }
+    75%
+    {
+        border-bottom-color: #ff00ff;
+    }
+    100%
+    {
+        border-left-color: #ff00ff;
+    }
+    
+}
+.screen
+{
+    width: 100%;
+    padding: 15px;
+    text-align: right;
+    border: none;
+    animation: cal;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+   border: 5px solid cyan;
+   transition: 1s;
+}
+.button
+{
+    width: 50px;
+    height: 50px;
+    margin: 7px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    animation: cal;
+    animation-duration: 3s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+   border: 3px solid cyan;
+   transition: 1s;
+}
+.button:hover
+{
+    background-color: black;
+    color: white;
+}
+#button1
+{
+    background-color: black;
+    color: white;
+}
+#button1:hover
+{
+    background-color: white;
+    color: black;
+}
+#clear
+{
+    background-color: red;
+    color: white;
+}
+#clear:hover
+{
+    background-color: green;
+}

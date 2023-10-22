@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" type="text/css" href="./index.css"/>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    </head>
+    <body>
+        <div class="calculator">
+            <form id="form" class="form1">
+                <input type="text" id="result" class="screen" placeholder="0"><br/><br/>
+
+                <input type="button" onclick="display(7)" value="7" class="button">
+                <input type="button" onclick="display(8)" value="8" class="button">
+                <input type="button" onclick="display(9)" value="9" class="button">
+                <input type="button" onclick="display('+')" value="+" class="button" id="button1"><br/>
+
+                <input type="button" onclick="display(4)" value="4" class="button">
+                <input type="button" onclick="display(5)" value="5" class="button">
+                <input type="button" onclick="display(6)" value="6" class="button">
+                <input type="button" onclick="display('-')" value="-" class="button" id="button1"><br/>
+
+                <input type="button" onclick="display(1)" value="1" class="button">
+                <input type="button" onclick="display(2)" value="2" class="button">
+                <input type="button" onclick="display(3)" value="3" class="button">
+                <input type="button" onclick="display('*')" value="x" class="button" id="button1"><br/>
+
+                <input type="button" onclick="clr()" value="C" class="button" id="clear">
+                <input type="button" onclick="display(0)" value="0" class="button">
+                <input type="button" onclick="solve()" value="=" class="button" id="button1">
+                <input type="button" onclick="display('/')" value="/" class="button" id="button1"><br/>
+
+            </form>
+        </div>
+        <script src="./index.js"></script>
+    </body>
+</html>
