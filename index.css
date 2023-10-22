@@ -12,6 +12,12 @@ body
     align-items: center;
     background-color: rgb(26, 23, 23);
 }
+h1
+{
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
 .calculator
 {
     width: 310px;
